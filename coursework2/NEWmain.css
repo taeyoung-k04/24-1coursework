@@ -1,0 +1,283 @@
+.Protest-Riot{
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+:root{
+    --black: #000000;
+    --dark-gray: #959595;
+    --light-gray: #c7c7c7;
+    --white: #FFFFFF;
+    --green: #CDFADB;
+    --lime: #F6FDC3;
+    --orange: #FFCF96;
+    --red: #FF8080;
+    --main-font: "Protest Riot";
+    --title-font: "Outfit";
+}
+
+@media only screen and (min-width: 1200px), (max-width: 2000px){
+    
+    .menu{
+        opacity: 1;
+        visibility: visible;
+        display:flex;
+        justify-content:space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--red);
+        height: 500px;
+        width: 350px;
+        position: absolute;
+        top: 21vh;
+        right: 10vw;
+    }
+    .menu .arrow{
+        background-color: var(--orange);
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        letter-spacing: 1px;
+        text-align: center;
+        transition: all .5s ease;
+        float: left;
+        line-height: 27px;
+        margin-left: 20px;
+        margin-top: 3px;
+    }
+
+    .menu .tag:hover{
+        transition: all .5s ease;
+        letter-spacing: 2.5px;
+    }
+    .menu .tag{
+        background-color: var(--orange);
+        text-align: center;
+        float: left;
+        border-radius: 10px;
+        width: 210px;
+    }
+    .menu a{
+        text-decoration: none;
+        color: var(--black);
+    }
+    .menu li{
+        display: flex;
+        list-style: none;
+        font-weight: bold;
+        font-size: 30px;
+        font-family: var(--main-font);
+        background-color: var(--white);
+        align-items: center;
+        height: 60px;
+        width: 270px;
+        padding: 5px;
+    }
+
+    .content .name{
+        background-color: var(--orange);
+        text-transform: capitalize;
+        font-family: var(--main-font);
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+        width: 400px;
+        height: 80px;
+        margin: 10px;
+    }
+
+    .content{
+        width: fit-content;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: 15vh;
+        left: 10vw;
+    }
+    .content p{
+        background-color: var(--orange);
+        font-family: var(--title-font);
+        width: 510px;
+        height: 110px;
+        padding: 15px;
+        margin: 10px;
+    }
+/*
+    .content img{
+        align-items: center;
+        background-color: var(--red);
+        width: 340px;
+        height: 340px;
+        padding: 20px;
+        margin: 10px;
+    }
+    */
+    .slider{
+        background-color: var(--red);
+        width: 340px;
+        height: 340px;
+        margin: 10px;
+        overflow: hidden;
+    }
+
+    .slider-items .slider-item{
+        left: 115px;
+        top: 130px;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        transition: 0.5s;
+    }
+
+    .slider-controls span{
+        cursor: pointer;
+        position: absolute;
+        top: 42%;
+        width: 34px;
+        height: 70px;
+        line-height: 65px;
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        font-family: var(--main-font);
+        color: var(--black);
+        background-color: var(--red);
+        transition: 0.3s ease;
+    }
+    .slider-controls span:hover{
+        color: var(--red);
+        background-color: var(--black);
+    }
+    .slider-controls .left-button{
+        left: 56px;
+        border-radius: 10px 0 0 10px;
+    }
+    .slider-controls .right-button{
+        right: 56px;
+        border-radius: 0 10px 10px 0;
+    }
+    .slider-controls img{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .slider-index{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        bottom: 146px;
+    }
+    .slider-index span{
+        cursor: pointer;
+        margin: 0 4px;
+        width: 8px;
+        height: 8px;
+        border-radius: 3px;
+        transition: 0.2s;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+
+    .slider-controls .left-button{
+        left: 51px;
+    }
+    .slider-controls .right-button{
+        right: 51px;
+    }
+    .slider-controls img{
+        opacity: 1;
+        visibility: visible;
+    }
+    .slider-controls .left-item{
+        left: -115px;
+        top: 180px;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        transition: 0.5s;
+    }
+    .slider-controls .right-item{
+        right: -115px;
+        top: 180px;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        transition: 0.5s;
+    }
+
+    .content{
+        left: 20%;/*want it to move more centeredly*/
+        max-width: 100vw;
+    }
+    .menu{
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        top: 10vh;
+        right: 0;
+        width: 100%;
+        background-color: var(--green);
+    }
+    .menu li{
+        background-color: var(--green);
+    }
+
+    .burger{
+        padding: 0px 16px 0px 16px;
+    }
+    .burger div{
+        border-radius: 2px;
+        width: 30px;
+        height: 5px;
+        background-color: var(--black);
+        margin: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .nav-active{
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.5s ease;
+    }
+    .con-active{
+        transform: translateY(85%);
+        transition: all 0.5s ease;
+    }
+
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-7px,7px);
+    }
+    .toggle .line2{
+        opacity: 0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-7px,-7px);
+    }
+}
+

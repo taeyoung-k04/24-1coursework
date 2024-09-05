@@ -1,0 +1,173 @@
+.Protest-Riot{
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+:root{
+    --black: #000000;
+    --dark-gray: #959595;
+    --light-gray: #c7c7c7;
+    --white: #FFFFFF;
+    --green: #CDFADB;
+    --lime: #F6FDC3;
+    --orange: #FFCF96;
+    --red: #FF8080;
+    --main-font: "Protest Riot";
+    --title-font: "Outfit";
+}
+@media only screen and (min-width: 800px), (max-width: 2000px){
+    table{
+        position: absolute;
+        top: 140px;
+        left: 130px;
+        width: 1200px;
+        background-color: var(--red);
+        padding: 10px;
+    }
+
+    th{
+        background-color: var(--orange);
+    }
+
+    img{
+        width: 120px;
+        height: 120px;
+        border-radius: 20px;
+    }
+    .firstline{
+        padding: 10px;
+    }
+    b{
+        font-family: var(--main-font);
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .secondline{
+        width: 300px;
+        height: 385px;
+    }
+
+    button{
+        border: none;
+        outline: none;
+        background-color: inherit;
+        cursor: pointer;
+        margin: 0px;
+        width: 280px;
+        height: 380px;
+        font-family: var(--title-font);
+    }
+
+    button:hover{
+        .hover{
+            visibility: visible;
+        }
+        .ingredient{
+            opacity: 0.3;
+        }
+        .recipe{
+            opacity: 0.3;
+        }
+    }
+    .hover{
+        visibility: hidden;
+        position: absolute;
+        display: flex;
+        top: 50%;
+        text-shadow: 0 0 5px var(--white);
+    }
+
+
+    .recipe{
+        list-style-type: decimal;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .ingredient{
+        display: inline-block;
+        font-size: 17px;
+    }
+
+    .ingredient li{
+        text-align: right;
+        list-style-type: square;
+        list-style-position: inside;
+    }
+
+    p{
+        text-align: left;
+        font-weight: bold;
+        margin: 3px;
+        text-transform: capitalize;
+    }
+    .items{
+        display: none;
+    }
+    .closetab{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .closetab{
+        cursor: pointer;
+        font-family: var(--title-font);
+        font-size: 25px;
+        font-weight: bold;
+        position: absolute;
+        top: 13%;
+        left: 65%;
+    }
+    .closetab:hover{
+        text-shadow: 0 0 5px var(--red);
+    }
+    .items{
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 160px;
+        left: 27%;
+    }
+    .item{
+        width: 250px;
+        height: 155px;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 5px;
+        background-color: var(--red);
+    }
+    table{
+        display: none;
+        top: 18%;
+        left: 15%;
+        width: 400px;
+    }
+    #gy{
+        display: none;
+        width: 400px;
+    }
+    #rc{
+        display: none;
+        width: 400px;
+    }
+    #dd{
+        display: none;
+        width: 400px;
+    }
+    .con-active{
+        position: relative;
+        top: 230px;
+    }
+}

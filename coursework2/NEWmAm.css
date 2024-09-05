@@ -1,0 +1,114 @@
+.Protest-Riot{
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+:root{
+    --black: #000000;
+    --dark-gray: #959595;
+    --light-gray: #c7c7c7;
+    --white: #FFFFFF;
+    --green: #CDFADB;
+    --lime: #F6FDC3;
+    --orange: #FFCF96;
+    --red: #FF8080;
+    --main-font: "Protest Riot";
+    --title-font: "Outfit";
+}
+
+@media only screen and (min-width: 800px), (max-width: 2000px){
+    p{
+        position: absolute;
+        top: 140px;
+        left: 550px;
+        width: 300px;
+        font-family: var(--main-font);
+        font-size: 40px;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+    }
+    
+    .buttons{
+        flex-direction: row;
+        position: relative;
+        width: 954px;
+        top: 210px;
+        left: 250px;
+    }
+    .buttons span{
+        cursor: pointer;
+        padding: 0 10px 0 10px;
+        border-radius: 5px;
+        background-color: var(--red);
+        font-family: var(--title-font);
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 0 50px;
+    }
+    .buttons span:hover{
+        color: var(--orange);
+    }
+    .buttons span:active{
+        background-color: var(--orange);
+    }
+
+    .mapClass{
+        width: 900px;
+        height: 450px;
+        background-color: var(--red);
+        top: 200px;
+        left: 250px;
+    }
+
+    video{
+        position: absolute;
+        top: 200px;
+        left: 860px;
+        background-color: var(--orange);
+        padding: 10px;
+        width: 290px;
+        height: 450px;
+        align-content: center;
+    }
+    .videos{
+        overflow: hidden;
+    }
+
+}
+@media only screen and (max-width: 800px){
+    p{
+        top:100px;
+        left: 200px;
+    }
+
+    .mapClass{
+        width: 520px;
+        top: 180px;
+        left: 15%;
+    }
+
+    .buttons{
+        width: 675px;
+        left: 10%;
+    }
+    .buttons span{
+        margin: 10px;
+    }
+
+    video{
+        top: 180px;
+        left: 350px;
+    }
+    .con-active{
+        position: relative;
+        top: 300px;
+    }
+}

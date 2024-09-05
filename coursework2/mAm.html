@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            MOREABOUTME
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content = "width = device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="./NEWglobal.css" >
+        <link rel="stylesheet" type="text/css" href="./NEWmAm.css" >
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Anta&family=Outfit&family=Protest+Riot&display=swap');
+        </style>
+
+        <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+    ({key: "AIzaSyATf_GSbEHdcHFdq9r1fvlaeNCBkr1_QTo", v: "weekly"});</script>
+    </head>
+    <body>
+        <header>
+            <div class = "title">
+                <h3><a href="./main.html">who am I?</a></h3>
+                <h5>-more about me</h5>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </header>
+        <nav>
+            <ul class = "nav-links">
+                <li><a href="./profile.html">Profile</a></li>
+                <li><a href="./recipe.html">Recipe</a></li>
+                <li><a href="./mAm.html">More about me</a></li>
+                <li><a href="./contact.html">contact</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper">
+            <p>Travel the world</p>
+
+            <div id="map" class="mapClass"></div>
+
+            <div class="buttons">
+                <span>travel to Dejeon</span>
+                <span>travel to Japan</span>
+                <span>travel to Leeds</span>    
+            </div>
+
+            <div class="videos">
+                <video src="dejeon.mp4" preload controls loop></video>
+                <video src="japan.mp4" preload controls loop></video>
+                <video src="leeds.mp4" preload controls loop></video>
+            </div>
+        </div>
+
+        <div class="scroll">
+            <div>scroll</div>
+            <div>▽</div>
+        </div>
+        <div class="gotoTop">
+            ↑<br>TOP
+        </div>
+        
+        <script src="./mAm.js"></script>
+        <script src="./global.js"></script>
+    </body>
+</html>
